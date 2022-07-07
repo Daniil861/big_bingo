@@ -545,14 +545,14 @@ body._loaded {
   position: absolute;
   top: 0;
 }
-@supports (right: clamp( 0rem , -5.2884615385rem  +  15.3846153846vw , 6.25rem )) {
+@supports (right: clamp( 0rem , -5.3413461538rem  +  15.5384615385vw , 6.3125rem )) {
   .man {
-    right: clamp( 0rem , -5.2884615385rem  +  15.3846153846vw , 6.25rem );
+    right: clamp( 0rem , -5.3413461538rem  +  15.5384615385vw , 6.3125rem );
   }
 }
-@supports not (right: clamp( 0rem , -5.2884615385rem  +  15.3846153846vw , 6.25rem )) {
+@supports not (right: clamp( 0rem , -5.3413461538rem  +  15.5384615385vw , 6.3125rem )) {
   .man {
-    right: calc(0rem + 6.25 * (100vw - 34.375rem) / 40.625);
+    right: calc(0rem + 6.3125 * (100vw - 34.375rem) / 40.625);
   }
 }
 @media (min-height: 37.5em) {
