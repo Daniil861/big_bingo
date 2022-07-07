@@ -382,7 +382,7 @@
     function holdButtonsBug() {
         document.querySelector(".bonus-game__buttons").classList.add("_hold");
         setTimeout((() => {
-            document.querySelector(".bonus-game__buttons").classList.remove("_hold");
+            if (config_game.bonus_numbers.length > 0) document.querySelector(".bonus-game__buttons").classList.remove("_hold");
         }), 2e3);
     }
     function useBugBonus() {
